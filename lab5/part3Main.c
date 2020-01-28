@@ -1,0 +1,76 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdbool.h>
+
+extern char *  pop();
+extern void push(char *);
+
+int main(int argc, char * argv[])
+{
+	char ch;
+	int n = 0;
+	char * tempStr[100] = { (char*) 0};
+	int caseconst;
+	bool toPop = false;
+	int k;
+	char* pushed[100] = { (char*) 0};
+	int pushedCount[100] = {0};
+
+
+	while ((ch = getchar()) != EOF) {
+	if (!(ch == '>' || ch == '<' || ch == '/')){
+			caseconst = 0;
+		}
+		else if (ch == '<'){
+			caseconst = 1;
+		}
+		else if (ch == '>'){
+			caseconst = 2;
+		}
+		else if (ch == '/'){
+			caseconst = 3;
+		}
+
+		switch(caseconst){
+		case 0:
+		if (k == 1){
+		tempStr[n]= strcat(tempStr[n],ch);}
+		break;
+		case 1:
+		k = 1;
+		break;
+		case 2:
+		k = 2;
+		if (toPop == true){
+		if(tempStr[n] != pop()){
+		fprintf(stderr,"NOT VALID TO POP");
+		exit(0);}
+		tempStr[n] = (char*) 0;
+		n--;}
+		else {
+		int x = 0;
+		if (pushed[x] == tempStr[n] || pushed[x] == ((char*) 0) ){
+		if (pushed[x] == (char*)0){
+		pushed[x] = tempStr[n];}
+		else{
+		pushedCount[x]++;}}
+		push(tempStr[n]);
+		n++;}
+		break;
+		case 3:
+		toPop = true;
+		break;
+		case:
+		break;
+		} 
+	}
+
+		int x=0;
+		while (pushedCount[x] != 0){
+		fprintf(stderr, "Pushed strings: %s  ammount printed: %d", pushed[x],pushedCount[x]);
+		x++;
+		}
+  exit(0);
+}

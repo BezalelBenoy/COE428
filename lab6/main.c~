@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+extern int pop();
+extern void push(int);
+extern int heapDelete();
+extern void addHeap(int);
+extern void sortHeap(int);
+extern int heapSize();
+extern void printtree(int);
+extern void printstack();
+
+int main(int argc, char * argv[])
+{
+  char* value = 100;
+  int s,y,count=0;
+  fgets(value,100,stdin);
+  while (strcmp(value, "-d\n") != 0) {
+    addHeap(atoi(value));
+    count++;
+    fgets(value,100,stdin);}
+
+	s=(heapSize()-1)/2;
+	for(y=s;y>=0;y--)
+		sortHeap(y);
+	printf("\n");
+	printtree(0);
+	printf("\n");
+	
+	for(y=0;y<count;y++){
+		int delete= heapDelete();
+		push(delete);}
+	printf("\n");
+	for(y=0;y<count;y++)
+		printf("%d\n",pop());
+	printf("\n");
+	printstack();
+	exit(0);}
+    
+    
+    

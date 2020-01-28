@@ -1,0 +1,10 @@
+Bezalel Benoy, 500817911
+Worked with Jathuson Daniel (500832699).
+
+Part one works, Part two does work for characters but not integers, and part three should work but can not be impelemented because strcat is recognised in this version of C.
+
+Questions
+1. I did not use hash tables and instead opted to do direct addressing as I don't have proper knowledge of hash tables to impelement it.
+2. Again as stated above the function I wanted to use to convert the string did not work
+3.
+  
