@@ -1,0 +1,4 @@
+Bezalel Benoy, 500817911
+Worked with Jathushon Daniel, (500832699)
+
+I kept getting error in this lab while trying to implement the change command and could not complete it. I got the state machine set up and the intial state to print out and the print command to work.I could not figure out the garbage collection or delete command so I didnt do it. I kept getting the error where my whole state machine kept being printed after every command along with the intial state, Im still trying to figure this one out. 

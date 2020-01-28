@@ -1,0 +1,38 @@
+Bezalel Benoy, 500817911
+Worked with Jathuson Daniel (500832699)
+
+Accomplishments:
+InsertionSort works well using the metrics header with both even and odd arrays. The sorted array and the metrics for the sort are both outputted.
+
+MergeSort works well using the metrics header with both even and odd arrays. The sorted array and the metrics for the sort are both outputted. I did run into to trouble trying to implement sorting for odd arrays but I have fixed it.I might have not run enough cases to fully flesh out the code but it works with base cases.
+
+Analysis:
+InsertionSort:-
+Best Case-      Comparisons: 9
+		Swaps: 0
+		Copy operations: 20
+
+Average Case-   Comparisons: 19
+		Swaps: 15
+		Copy operations: 14
+
+Worst Case-	Comparisons: 45
+		Swaps: 45
+		Copy operations: 20
+
+MergeSort:-
+Best Case-	Comparisons: 53
+		Swaps: 0
+		Copy operations: 68
+
+Average Case-   Comparisons: 33
+		Swaps: 0
+		Copy operations: 40
+
+Worst Case- 	Comparisons: 53
+		Swaps: 0
+		Copy operations: 68
+
+
+
+

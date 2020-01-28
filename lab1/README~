@@ -1,0 +1,7 @@
+Bezalel Benoy,500817911
+
+Collaborated with Jathushon Daniel(500832699),Liliana Lyn Ao Zhang (500806147), Aashir Khan(500848590)
+Source code for insertion sort for mySort.c is taken from http://www.firmcodes.com/sorting-algorithms-in-c/
+
+Question
+1. We could implement the insertion sort method by storing the first and last variables in temporary variables(bucket).Comparing each segment in the array with the variable in the bucket and running insertion sort to arrange all the segments in the desired order.
